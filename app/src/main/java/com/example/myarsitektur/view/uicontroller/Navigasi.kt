@@ -12,4 +12,14 @@ fun SiswaApp(
     viewModel: SiswaViewModel
 ) {
     val uiState = viewModel.statusUI.collectAsState()
+
+    Scaffold {isiRuang ->
+
+        NavHost(
+            navController = navController,
+            startDestination = Navigasi.Formulir.name,
+            modifier = Modifier.padding(isiRuang)
+        )
+
+    }
 }
