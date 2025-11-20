@@ -34,7 +34,7 @@ fun TampilSiswa(
                 verticalArrangement = Arrangement.spacedBy(
                     space = dimensionResource(id = R.dimen.padding_small)
                 )
-            ){
+            ) {
 
                 items.forEach { item ->
                     Column {
@@ -57,6 +57,15 @@ fun TampilSiswa(
                         dimensionResource(id = R.dimen.padding_small)
                     )
                 )
+
+                Button(
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = onBackButtonClicked
+                ) {
+                    Text(text = stringResource(id = R.string.back))
+                }
+            }
+
         }
 
     }
