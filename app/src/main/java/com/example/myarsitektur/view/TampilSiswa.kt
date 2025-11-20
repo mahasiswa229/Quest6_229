@@ -21,5 +21,14 @@ fun TampilSiswa(
                 )
             )
         }
-    ){}
+    ){isiRuang ->
+
+        Column(
+            modifier = Modifier.padding(isiRuang),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+            
+        }
+
+    }
 }
