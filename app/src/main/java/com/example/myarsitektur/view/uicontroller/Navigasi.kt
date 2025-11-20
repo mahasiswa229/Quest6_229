@@ -11,5 +11,5 @@ fun SiswaApp(
     navController: NavHostController,
     viewModel: SiswaViewModel
 ) {
-    
+    val uiState = viewModel.statusUI.collectAsState()
 }
