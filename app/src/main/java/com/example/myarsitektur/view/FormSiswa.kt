@@ -44,6 +44,26 @@ fun FormSiswa(
             )Text("Jenis Kelamin:")
             Row(
                 verticalAlignment = Alignment.CenterVertically
-            )
+            ){
+                pilihanJK.forEach { item ->
+                    Row(
+                        modifier = Modifier.selectable(
+                            selected = txtGender == item,
+                            onClick = {
+                                txtGender = item
+                            }
+                        ),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        RadioButton(
+                            selected = txtGender == item,
+                            onClick = {
+                                txtGender = item
+                            }
+                        )
+                        Text(text = item)
+                    }
+                }
+            }
     }
 }
