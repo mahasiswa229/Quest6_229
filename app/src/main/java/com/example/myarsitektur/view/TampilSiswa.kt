@@ -52,6 +52,11 @@ fun TampilSiswa(
                         )
                     }
                 }
+                Spacer(
+                    modifier = Modifier.height(
+                        dimensionResource(id = R.dimen.padding_small)
+                    )
+                )
         }
 
     }
