@@ -4,3 +4,12 @@ enum class Navigasi {
     Formulir,
     Detail
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun SiswaApp(
+    navController: NavHostController,
+    viewModel: SiswaViewModel
+) {
+    
+}
