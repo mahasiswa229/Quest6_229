@@ -41,6 +41,9 @@ fun FormSiswa(
                 onValueChange = {
                     txtNama = it
                 }
+            )Text("Jenis Kelamin:")
+            Row(
+                verticalAlignment = Alignment.CenterVertically
             )
     }
 }
