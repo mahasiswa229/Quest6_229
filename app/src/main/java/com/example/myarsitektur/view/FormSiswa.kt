@@ -65,5 +65,10 @@ fun FormSiswa(
                     }
                 }
             }
+            HorizontalDivider(
+                modifier = Modifier.padding(vertical = 16.dp),
+                thickness = dimensionResource(id = R.dimen.thickness_divider),
+                color = MaterialTheme.colorScheme.secondary
+            )
     }
 }
